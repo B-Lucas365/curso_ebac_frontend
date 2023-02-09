@@ -2,7 +2,7 @@
   "name": "curso_ebac_frontend",
   "version": "1.0.0",
   "description": "",
-  "main": "index.js",
+  "main": "gruntfile.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
@@ -17,6 +17,8 @@
   },
   "homepage": "https://github.com/B-Lucas365/curso_ebac_frontend#readme",
   "devDependencies": {
-    "less": "^4.1.3"
+    "grunt": "^1.6.1",
+    "grunt-contrib-less": "^3.0.0",
+    "grunt-contrib-uglify": "^5.2.2"
   }
 }
