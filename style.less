@@ -4,6 +4,8 @@
 @cor-header: #182C61;
 @font-principal: 'Roboto', sans-serif;
 
+@import './medias.less';
+
 *{
     margin: 0;
     padding: 0;
@@ -86,24 +88,4 @@ padding: 56px 0;
     }
 }
 
-@media screen and (max-width: 1023px) {
-    .container {
-    max-width: 80%;
-        .products {
-            grid-template-columns: repeat(2, 48.5%);
-            column-gap: 3%;
-        }
-    }
-    
-    
-    }
-    
-    @media screen and (max-width: 767px) {
-    .products {
-        display: block;
-        .product-item  {
-            margin-bottom: 32px;
-        }
-    }
-}
 
