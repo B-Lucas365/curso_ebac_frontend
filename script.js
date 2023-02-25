@@ -1,20 +1,10 @@
 $(document).ready(function() {
-    // Adiciona tarefa ao enviar o formulário
-    $('#add-task-btn').click(function(event) {
-      event.preventDefault(); // Previne o comportamento padrão do formulário de recarregar a página
-      
-      var taskName = $('#new-task').val();
-      if (taskName.trim() === '') { // Verifica se o nome da tarefa está vazio
-        alert('Por favor, adicione um nome para a tarefa.');
-        return;
-      }
-      
-      $('#task-list').append('<li>' + taskName + '</li>');
-      $('#new-task').val('');
-    });
-    
-    // Marca tarefa como concluída quando clicada
-    $('#task-list').on('click', 'li', function() {
-      $(this).toggleClass('done');
-    });
-  });
+    // Máscara para o campo de telefone
+    $('#telefone').mask('(00) 0000-0000');
+  
+    // Máscara para o campo de CPF
+    $('#cpf').mask('000.000.000-00');
+  
+    // Máscara para o campo de CEP
+    $('#cep').mask('00000-000');
+});
